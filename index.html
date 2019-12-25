@@ -9,20 +9,20 @@
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: #222;
   font-size: 100%;
+  margin:0;
 }
 
 .slide {
-  position: absolute;
-  top: 0; bottom: 0;
-  left: 0; right: 0;
+  width: 100%;
+  height: 100vh;
   background-color: #f7f7f7;
 }
 
 .slide-content {
-  width: 800px;
-  height: 600px;
+  width: auto;
+  height:100vh;;
   overflow: hidden;
-  margin: 80px auto 0 auto;
+  margin:0 auto;
   padding: 30px;
 
   font-weight: 200;
@@ -365,12 +365,14 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
     <div class="progress-bar"></div>
   </div>
 
-  <div class="slide " id="slide-1">
+  <div class="slide 
+" id="slide-1">
     <section class="slide-content"><h1 id="decouple-the-business-logic-from-the-framework">Decouple the business logic from the framework</h1>
 <h2 id="from-domain-modeling-to-framework-integration">From Domain Modeling to framework integration</h2>
 </section>
   </div>
-  <div class="slide hidden " id="slide-2">
+  <div class="slide hidden 
+" id="slide-2">
     <section class="slide-content"><h3 id="what-is-decoupling-">What is decoupling?</h3>
 <ul>
 <li><strong>It doesn&#39;t mean DON&#39;T USE A FRAMEWORK</strong></li>
@@ -380,7 +382,8 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 </ul>
 </section>
   </div>
-  <div class="slide hidden " id="slide-3">
+  <div class="slide hidden 
+" id="slide-3">
     <section class="slide-content"><h3 id="decoupling-why-">Decoupling? Why?</h3>
 <ul>
 <li>Have a better communication with stackholders</li>
@@ -396,7 +399,8 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 </ul>
 </section>
   </div>
-  <div class="slide hidden " id="slide-4">
+  <div class="slide hidden 
+" id="slide-4">
     <section class="slide-content"><h3 id="decoupling-why-">Decoupling? Why?</h3>
 <ul>
 <li>Frameworks can only help us on technical parts</li>
@@ -406,7 +410,8 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 </ul>
 </section>
   </div>
-  <div class="slide hidden " id="slide-5">
+  <div class="slide hidden 
+" id="slide-5">
     <section class="slide-content"><h3 id="how-to-decouple-">How to decouple?</h3>
 <p>Using some <strong>GOOD</strong> practices like:</p>
 <ul>
@@ -417,28 +422,32 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 </ul>
 </section>
   </div>
-  <div class="slide hidden " id="slide-6">
+  <div class="slide hidden 
+" id="slide-6">
     <section class="slide-content"><h3 id="what-should-be-decoupled-">What should be decoupled?</h3>
 <ul>
 <li>The business logic</li>
 </ul>
 </section>
   </div>
-  <div class="slide hidden " id="slide-7">
+  <div class="slide hidden 
+" id="slide-7">
     <section class="slide-content"><h3 id="a-typical-software-archictecture">A typical software archictecture</h3>
 <p>Layered architecture</p>
 <center>
     <img src="img/layered.png" width="60%"/>
 </center></section>
   </div>
-  <div class="slide hidden " id="slide-8">
+  <div class="slide hidden 
+" id="slide-8">
     <section class="slide-content"><h3 id="where-a-framework-can-help-">Where a framework can help?</h3>
 <p>Framework intervention area</p>
 <center>
     <img src="img/framework-stuff.png" width="60%"/>
 </center></section>
   </div>
-  <div class="slide hidden " id="slide-9">
+  <div class="slide hidden 
+" id="slide-9">
     <section class="slide-content"><h3 id="what-is-the-business-logic-">What is the business logic?</h3>
 <p>Business logic is that portion of an enterprise system which determines how data is:
 Transformed and/or calculated. </p>
@@ -447,7 +456,8 @@ Transformed and/or calculated. </p>
 <p><code>Source: http://wiki.c2.com/?BusinessLogicDefinition</code></p>
 </section>
   </div>
-  <div class="slide hidden " id="slide-10">
+  <div class="slide hidden 
+" id="slide-10">
     <section class="slide-content"><h3 id="when-we-should-not-do-it-">When we should not do it?</h3>
 <ul>
 <li>When the business domain is not clear</li>
@@ -456,7 +466,8 @@ Transformed and/or calculated. </p>
 </ul>
 </section>
   </div>
-  <div class="slide hidden " id="slide-11">
+  <div class="slide hidden 
+" id="slide-11">
     <section class="slide-content"><h3 id="it-is-time-consuming-right-">It is time consuming, right?</h3>
 <h2 id="yes-and-no">Yes and No</h2>
 <ul>
@@ -465,7 +476,8 @@ Transformed and/or calculated. </p>
 </ul>
 </section>
   </div>
-  <div class="slide hidden " id="slide-12">
+  <div class="slide hidden 
+" id="slide-12">
     <section class="slide-content"><h3 id="steps-towards-decoupling">Steps towards decoupling</h3>
 <ul>
 <li>Decouple the namespace (App is not the business name)</li>
@@ -477,18 +489,21 @@ Transformed and/or calculated. </p>
 </ul>
 </section>
   </div>
-  <div class="slide hidden " id="slide-13">
+  <div class="slide hidden 
+" id="slide-13">
     <section class="slide-content"><h3 id="talk-is-cheap-show-me-the-code">Talk is cheap show me the code</h3>
 <center>
     <img src="img/linus-small.jpeg" />
 </center></section>
   </div>
-  <div class="slide hidden " id="slide-14">
+  <div class="slide hidden 
+" id="slide-14">
     <section class="slide-content"><h3 id="our-example">Our example</h3>
 <h1 id="a-todolist">A Todolist</h1>
 </section>
   </div>
-  <div class="slide hidden " id="slide-15">
+  <div class="slide hidden 
+" id="slide-15">
     <section class="slide-content"><h3 id="project-initialization">Project initialization</h3>
 <pre><code class="lang-shell"><span class="hljs-meta">$</span><span class="bash"> composer init</span>
 </code></pre>
@@ -497,7 +512,8 @@ Transformed and/or calculated. </p>
 <p>Keep press enter for the rest</p>
 </section>
   </div>
-  <div class="slide hidden " id="slide-16">
+  <div class="slide hidden 
+" id="slide-16">
     <section class="slide-content"><h3 id="decouple-the-namespace">Decouple the namespace</h3>
 <pre><code class="lang-json">{
     <span class="hljs-attr">"name"</span>: <span class="hljs-string">"cherif/todo"</span>,
@@ -520,12 +536,14 @@ Transformed and/or calculated. </p>
 </code></pre>
 </section>
   </div>
-  <div class="slide hidden " id="slide-17">
+  <div class="slide hidden 
+" id="slide-17">
     <section class="slide-content"><h3 id="domain-modeling-domain-layer-to-decouple-the-business-logic">Domain Modeling (Domain layer), to decouple the business logic</h3>
 <p>Idealy, it depends on the programming language only, sometimes, some implementations needs external libraries in order to not invent the wheel.</p>
 </section>
   </div>
-  <div class="slide hidden " id="slide-18">
+  <div class="slide hidden 
+" id="slide-18">
     <section class="slide-content"><h3 id="domain-modeling-domain-layer-to-decouple-the-business-logic">Domain Modeling (Domain layer), to decouple the business logic</h3>
 <ul>
 <li><p><strong>Value Objects</strong>: is not just a thing in your domain, it measures,
@@ -537,7 +555,8 @@ date range - whose equality is not based on identity, but instead on the content
 </ul>
 </section>
   </div>
-  <div class="slide hidden " id="slide-19">
+  <div class="slide hidden 
+" id="slide-19">
     <section class="slide-content"><h3 id="domain-modeling-domain-layer-">Domain Modeling (Domain layer)</h3>
 <ul>
 <li><p><strong>Repositories</strong>: Object with collection like behavior to abstract away the persistence mechanism, repositories act as storage locations, where a retrieved object is returned in the exact same state it was persisted in - making them very easy to reason about.</p>
@@ -547,7 +566,8 @@ date range - whose equality is not based on identity, but instead on the content
 </ul>
 </section>
   </div>
-  <div class="slide hidden " id="slide-20">
+  <div class="slide hidden 
+" id="slide-20">
     <section class="slide-content"><h3 id="domain-modeling-domain-layer-to-decouple-the-business-logic">Domain Modeling (Domain layer), to decouple the business logic</h3>
 <p><code>A note on decoupling the database</code></p>
 <ul>
@@ -560,7 +580,8 @@ date range - whose equality is not based on identity, but instead on the content
 </ul>
 </section>
   </div>
-  <div class="slide hidden " id="slide-21">
+  <div class="slide hidden 
+" id="slide-21">
     <section class="slide-content"><h3 id="application-services-aka-application-apis-application-layer-">Application Services, AKA Application APIs (Application layer)</h3>
 <p>Are the middleware between the outside world and the domain logic. </p>
 <p>The purpose of such a mechanism is to transform data from the outside world into meaningful
@@ -568,7 +589,8 @@ domain instructions.</p>
 <p>Depends on the domain layer, persistence layer and/or infrastructure layer</p>
 </section>
   </div>
-  <div class="slide hidden " id="slide-22">
+  <div class="slide hidden 
+" id="slide-22">
     <section class="slide-content"><h3 id="frameworks-or-libraries-integration-infrastructure-layer-">Frameworks or Libraries integration (Infrastructure layer)</h3>
 <ul>
 <li><p>Bind/glue services and repositories with the help of Dependency injection container.</p>
@@ -582,7 +604,8 @@ domain instructions.</p>
 </ul>
 </section>
   </div>
-  <div class="slide hidden " id="slide-23">
+  <div class="slide hidden 
+" id="slide-23">
     <section class="slide-content"><h3 id="database-persistence-integration-infrastructure-layer-">Database/Persistence integration (Infrastructure layer)</h3>
 <ul>
 <li><p>Where the ORM specific metadata should be, like doctrine mapping files.</p>
@@ -592,7 +615,8 @@ domain instructions.</p>
 </ul>
 </section>
   </div>
-  <div class="slide hidden " id="slide-24">
+  <div class="slide hidden 
+" id="slide-24">
     <section class="slide-content"><h3 id="infrastructure-services-integration-infrastructure-layer-">Infrastructure services integration (Infrastructure layer)</h3>
 <ul>
 <li><p>Hold components responsible for technical stuff, hashing password, notifications, emailing ... etc</p>
@@ -602,7 +626,8 @@ domain instructions.</p>
 </ul>
 </section>
   </div>
-  <div class="slide hidden " id="slide-25">
+  <div class="slide hidden 
+" id="slide-25">
     <section class="slide-content"><h3 id="books">Books</h3>
 <center>
     <img src="img/ddd-blue.jpg" width="26%" />
