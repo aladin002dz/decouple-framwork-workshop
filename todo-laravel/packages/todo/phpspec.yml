@@ -1,5 +1,0 @@
-suites:
-    todo:
-      namespace: Todo
-      psr4_prefix: Todo
-      src_path: ./src/Todo
